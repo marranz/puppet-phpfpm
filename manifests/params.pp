@@ -3,8 +3,9 @@
 #
 # Configuration for the phpfpm module. Do not use this class directly.
 #
-class phpfpm::params )
-  Boolean $service_ensure = 'false'
+class phpfpm::params (
+  Boolean $service_enabled = false,
+  String $service_ensure = "stopped"
   )
   {
   case $::osfamily {
