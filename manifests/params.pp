@@ -3,8 +3,10 @@
 #
 # Configuration for the phpfpm module. Do not use this class directly.
 #
-class phpfpm::params {
-
+class phpfpm::params )
+  Boolean $service_ensure = 'false'
+  )
+  {
   case $::osfamily {
     'debian': {
       # Module configuration defaults

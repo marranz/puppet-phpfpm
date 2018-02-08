@@ -22,6 +22,7 @@ class phpfpm (
   $poold_purge                 = $phpfpm::params::poold_purge,
   $package_name                = $phpfpm::params::package_name,
   $service_name                = $phpfpm::params::service_name,
+  $service_ensure                = $phpfpm::params::service_ensure,
   $config_dir                  = $phpfpm::params::config_dir,
   $config_name                 = $phpfpm::params::config_name,
   $config_template_file        = $phpfpm::params::config_template_file,
